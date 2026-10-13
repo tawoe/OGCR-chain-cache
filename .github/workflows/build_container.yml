@@ -15,7 +15,7 @@ jobs:
       # repos (GitHub withholds secrets from fork PRs) → publish auto-skips.
       DOCKER_HUB_TOKEN: ${{ secrets.DOCKER_HUB_TOKEN }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Build container image
         run: |
